@@ -15,7 +15,7 @@ public class NewsLoader {
 	private PublishableNews prepareForPublish(IncomingNews news) {
 		PublishableNews publishable = PublishableNews.create();
 		for(IncomingInfo snew : news.elems()){
-			if(!snew.requiresSubsciption()){
+			if(!snew.requiresSubscription()){
 				publishable.addPublicInfo(snew.getContent());
 			}else{
 				publishable.addForSubscription(snew.getContent(), snew.getSubscriptionType());

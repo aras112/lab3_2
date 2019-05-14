@@ -9,7 +9,7 @@ public class IncomingInfo {
 		this.content = content;
 		this.subscriptionType = subscriptionType;
 	}
-	public boolean requiresSubsciption() {
+	public boolean requiresSubscription() {
 		return subscriptionType != SubsciptionType.NONE;
 	}
 
